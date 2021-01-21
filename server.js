@@ -13,7 +13,6 @@ process.on("uncaughtException", (error) => {
 config({ path: "./config.env" });
 import app from "./app";
 
-
 const DB = process.env.DATABASE_LOCAL;
 mongoose
   .connect(DB, {
